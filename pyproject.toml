@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "MLImageCompressor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Image compression using KMeans clustering"
 authors = [{ name="Nitin Baranwal" }]
 dependencies = ["numpy", "Pillow", "scikit-learn"]
