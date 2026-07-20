@@ -1,4 +1,4 @@
-# myimagecompressor
+# MLImageCompressor
 
 Image compression using **KMeans clustering**.  
 This library reduces the color complexity of images by clustering pixel values into a limited palette, producing visually compressed images with fewer colors.
