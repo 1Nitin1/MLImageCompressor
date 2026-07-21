@@ -27,7 +27,7 @@ def compress_video(path,n_colors=20,saveas='compressed_video'):
     width=int(capt.get(cv2.CAP_PROP_FRAME_WIDTH))
     height=int(capt.get(cv2.CAP_PROP_FRAME_HEIGHT))
     print(fps,width,height)
-    out=cv2.VideoWriter(f'{saveas}.mp4',cv2.VideoWriter_fourcc(*'mp4v'),fps,(width,height))
+    out=cv2.VideoWriter(f'{saveas}.mp4',cv2.VideoWriter_fourcc(*'avc1'),fps,(width,height))
     if not out.isOpened():
         print("Error: VideoWriter not opened")
 
@@ -44,4 +44,4 @@ def compress_video(path,n_colors=20,saveas='compressed_video'):
 
     capt.release()
     out.release()
-    print("Video saved as compressed_video.mp4")
+    print(f"Video saved as {saveas}.mp4")
